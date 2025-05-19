@@ -1,9 +1,14 @@
-import { StyledHeader, StyledTitle } from './StyledHeader';
+import { StyledHeader, StyledImg, StyledTitle } from './StyledHeader';
 
-const Header = () => {
+const Header = ({openMenu, setOpenMenu}) => {
   return (
     <StyledHeader>
       <StyledTitle>THE PLANETS</StyledTitle>
+      <StyledImg
+      src="/assets/icon-hamburger.svg" 
+      alt="three lines menu" 
+      onClick={() => setOpenMenu(!openMenu)}
+      openMenu={openMenu}/>
     </StyledHeader>
   );
 };
