@@ -1,4 +1,5 @@
-import { StyledHeader, StyledImg, StyledTitle } from './styledHeader';
+import { StyledHeader, StyledImg, StyledTitle } from "./header.styles";
+
 
 const Header = ({openMenu, setOpenMenu}) => {
   return (

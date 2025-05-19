@@ -1,4 +1,9 @@
-export const PLANETS_MENU = {
-
-    
-}
+export const PLANETS_MENU = [
+    {
+        name: 'Mercury'
+        
+    },
+    {
+        name: 'Venus'
+    }
+]

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { StyledCircle, StyledPlanet, StyledPlanetLabel, StyledPrimaryContainer, StyledSecondaryContainer, StyledText } from "./mobileMenu"
+import { StyledCircle, StyledPlanet, StyledPlanetLabel, StyledPrimaryContainer, StyledSecondaryContainer, StyledText } from "./menu.styles";
 
 const MobileMenu = () => {
     return (
