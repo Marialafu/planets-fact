@@ -29,8 +29,12 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body {
-    margin: 3.125rem;
-    font-family: sans-serif;
+    margin: 0;
+    font-family: "Antonio", sans-serif;
+    font-weight: 500;
+    color: white;
+    background-color: #070724;
+    background-image: url(/assets/background-stars.svg);
     }
 
 `;
