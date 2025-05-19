@@ -1,4 +1,4 @@
-import { StyledHeader, StyledImg, StyledTitle } from './StyledHeader';
+import { StyledHeader, StyledImg, StyledTitle } from './styledHeader';
 
 const Header = ({openMenu, setOpenMenu}) => {
   return (
@@ -8,7 +8,7 @@ const Header = ({openMenu, setOpenMenu}) => {
       src="/assets/icon-hamburger.svg" 
       alt="three lines menu" 
       onClick={() => setOpenMenu(!openMenu)}
-      openMenu={openMenu}/>
+      $openMenu={openMenu}/>
     </StyledHeader>
   );
 };

@@ -2,6 +2,11 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
 
+    :root{
+        --white: 'white';
+        
+    }
+
     *,
     *::after,
     *::before {
