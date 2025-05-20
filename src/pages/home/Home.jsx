@@ -1,16 +1,18 @@
-import Header from "../../components/header/Header";
-import HomeBody from "../../components/home-body/HomeBody";
-import MobileMenu from "../../components/mobile-menu/MobileMenu";
+import { useState } from 'react';
+import Header from '../../components/header/Header';
+import HomeBody from '../../components/home-body/HomeBody';
+import MobileMenu from '../../components/mobile-menu/MobileMenu';
 
-const Home = ({openMenu, setOpenMenu}) => {
-    return (
+const Home = () => {
+  const [openMenu, setOpenMenu] = useState(false);
+
+  return (
     <>
-    <Header openMenu={openMenu} setOpenMenu={setOpenMenu} />
-    {openMenu && <MobileMenu /> }
-    <HomeBody />
-    
+      <Header openMenu={openMenu} setOpenMenu={setOpenMenu} />
+      {openMenu && <MobileMenu />}
+      <HomeBody />
     </>
-    )
+  );
 };
 
 export default Home;

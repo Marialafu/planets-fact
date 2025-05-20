@@ -1,11 +1,11 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const StyledContainer = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    padding: 0 1rem;
-`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 105.5px);
+  padding: 0 1rem;
+`;
 
-export {StyledContainer}
+export { StyledContainer };

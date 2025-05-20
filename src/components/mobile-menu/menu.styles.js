@@ -1,54 +1,38 @@
-import styled from "styled-components";
+import styled from 'styled-components';
+import { COLORS } from '../../styles/Color';
 
-const StyledPrimaryContainer = styled.div`
+const StyledMenu = styled.ul`
+  width: 100%;
+  background-color: ${COLORS.primaryColor};
+  padding: 2.5rem 1.8125rem 2.5rem 19px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 105.5px;
+  gap: 2.5rem;
+`;
+
+const StyledMenuItem = styled.li`
+  font-family: 'Spartan', sans-serif;
+  font-weight: 700;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding-right: 1.5rem;
+  left: 1.875rem;
+
+  &::before {
+    content: '';
     position: absolute;
-    width: 100vw;
-    height: 37.4375rem;
-    background-color: #070724;
-    padding: 2.6875rem  1.8125rem 4.25rem 1.1875rem;
-`
-
-const StyledSecondaryContainer = styled.ul`
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
-    margin: 0;
-    padding: 0;
-`
-const StyledPlanetLabel = styled.li`
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    margin: 0;
-
-    &::before{
-        content: '';
-        position: absolute;
-        height: 0.0625rem;
-        background-color: #979797;
-        width: 20.4375rem;
-        top: 3.125rem;
-    }
-`
-const StyledPlanet = styled.div`
-    display: flex;
-    gap: 1.5625rem;
-    align-items: center;
-`
-
-const StyledCircle = styled.div`
     width: 1.25rem;
     height: 1.25rem;
+    background-color: ${({ $planet }) => $planet.color};
     border-radius: 100%;
-    background-color: aliceblue;
-`
+    left: -1.875rem;
+  }
+`;
 
-const StyledText = styled.h2`
-    font-family: "Spartan", sans-serif;
-    font-weight: 700;
-    font-size: 0.9375rem;
-    text-transform: uppercase;
-`
-
-export {StyledPrimaryContainer, StyledSecondaryContainer, StyledPlanetLabel, StyledCircle, StyledText, StyledPlanet}
+export { StyledMenu, StyledMenuItem };

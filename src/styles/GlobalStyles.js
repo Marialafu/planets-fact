@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { COLORS } from './Color';
 
 export const GlobalStyles = createGlobalStyle`
 
@@ -32,8 +33,8 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     font-family: "Antonio", sans-serif;
     font-weight: 500;
-    color: white;
-    background-color: #070724;
+    color: ${COLORS.white900};
+    background-color: ${COLORS.primaryColor};
     background-image: url(/assets/background-stars.svg);
     }
 

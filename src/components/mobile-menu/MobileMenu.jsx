@@ -1,22 +1,22 @@
-import { Link } from "react-router-dom"
-import { StyledCircle, StyledPlanet, StyledPlanetLabel, StyledPrimaryContainer, StyledSecondaryContainer, StyledText } from "./menu.styles";
+import { Link } from 'react-router-dom';
+import { PLANETS_MENU } from '../../constants/planets-menu';
+import { StyledMenu, StyledMenuItem } from './menu.styles';
 
 const MobileMenu = () => {
-    return (
-        <StyledPrimaryContainer>
-            <StyledSecondaryContainer>
-                <StyledPlanetLabel>
-                    <Link to='/src/pages/planet/Planet.jsx'/>
-                    <StyledPlanet>
-                        <StyledCircle />
-                        <StyledText>Planeta</StyledText>
-                    </StyledPlanet>
-                    <img src="/assets/icon-chevron.svg" alt="" />
-                </StyledPlanetLabel>
-            </StyledSecondaryContainer>
-        </StyledPrimaryContainer>
-    )
-
-}
+  return (
+    <nav>
+      <StyledMenu>
+        {PLANETS_MENU.map(planet => {
+          return (
+            <StyledMenuItem key={planet.id} $planet={planet}>
+              <Link to={planet.link}>{planet.name}</Link>
+              <img src='/assets/icon-chevron.svg' alt='chevron' />
+            </StyledMenuItem>
+          );
+        })}
+      </StyledMenu>
+    </nav>
+  );
+};
 
 export default MobileMenu;
