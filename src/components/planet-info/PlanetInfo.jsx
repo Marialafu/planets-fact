@@ -1,39 +1,42 @@
+import PlanetData from '../planet-data/PlanetData';
+import PlanetDescription from '../planet-description/PlanetDescription';
+import PlanetSource from '../planet-source/PlanetSource';
 import {
   StyledImg,
-  StyledDescriptionContainer,
-  StyledTitle,
-  StyledText,
-  StyledSourceContainer,
-  StylesSourceTitle,
   StyledContainer,
-  StyledSourceLink,
-  StyledInfoContainer,
-  StyledInfoTitle
+  StyledImgContainer,
+  StyledGeologyImg,
 } from './planet-info.styles';
 
-const PlanetInfo = ({ name, planetImg, description, source }) => {
+const PlanetInfo = ({planet, filter, planetLink}) => {
+  console.log(planetLink.size);
+  
+
+  const img = defineImg(filter, planet)
+  
   return (
     <StyledContainer>
-      <StyledImg src={planetImg} />
+    
+    <StyledImgContainer>
+        <StyledImg src={img} $planetLink={planetLink.size} />
+        {filter === 2 && <StyledGeologyImg $planet={planet} src={planet.geologyImg} />}
+    </StyledImgContainer>
+    
+    <PlanetDescription {...planet} filter={filter}/>
+    <PlanetSource {...planet} />
+    <PlanetData {...planet}/>
 
-      <StyledDescriptionContainer>
-        <StyledTitle>{name}</StyledTitle>
-        <StyledText>{description}</StyledText>
-      </StyledDescriptionContainer>
-
-      <StyledSourceContainer>
-        <StylesSourceTitle>Source:</StylesSourceTitle>
-        <StyledSourceLink target='_blank' href={source}>
-          Wikipedia
-        </StyledSourceLink>
-        <img src='/assets/icon-source.svg' alt='' />
-      </StyledSourceContainer>
-
-      <StyledInfoContainer>
-        <StyledInfoTitle>ROTATION TIME</StyledInfoTitle>
-      </StyledInfoContainer>
     </StyledContainer>
   );
 };
+
+const defineImg = (filter, planet) => {
+  console.log(filter);
+  if (filter === 1){
+    return planet.internalImg
+  } else{
+    return planet.planetImg
+  }
+}
 
 export default PlanetInfo;

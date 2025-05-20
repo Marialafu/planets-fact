@@ -1,9 +1,12 @@
+import { Link } from 'react-router-dom';
 import { StyledHeader, StyledImg, StyledTitle } from './header.styles';
 
 const Header = ({ openMenu, setOpenMenu }) => {
   return (
     <StyledHeader>
-      <StyledTitle>THE PLANETS</StyledTitle>
+      <StyledTitle>
+        <Link to='/'>THE PLANETS</Link>
+        </StyledTitle>
       <StyledImg
         src='/assets/icon-hamburger.svg'
         alt='three lines menu'

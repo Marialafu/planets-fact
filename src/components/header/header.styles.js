@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { COLORS } from '../../styles/Color';
 
 const StyledHeader = styled.header`
   display: flex;
@@ -14,7 +15,7 @@ const StyledHeader = styled.header`
     position: absolute;
     height: 0.0625rem;
     width: 100vw;
-    background-color: white;
+    background-color: ${COLORS.white500};
   }
 `;
 
@@ -23,7 +24,7 @@ const StyledTitle = styled.h1`
 `;
 
 const StyledImg = styled.img`
-  color: ${({$openMenu}) => $openMenu ? 'white' : 'black'};
+  background-color: ${({$openMenu}) => $openMenu ? 'white' : 'black'};
 `
 
 export { StyledHeader, StyledTitle, StyledImg };

@@ -1,0 +1,27 @@
+import styled from "styled-components";
+import { COLORS } from "../../styles/Color";
+
+const StyledSourceContainer = styled.div`
+  display: flex;
+  gap: 0.25rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.75rem;
+`;
+
+const StylesSourceTitle = styled.span`
+  font-weight: 100;
+  font-family: 'Spartan', sans-serif;
+  font-size: 0.75rem;
+  color: ${COLORS.white500};
+`;
+
+const StyledSourceLink = styled.a`
+  font-weight: 700;
+  font-family: 'Spartan', sans-serif;
+  text-decoration: underline;
+  font-size: 0.75rem;
+  color: ${COLORS.white500};
+`;
+
+export {StyledSourceContainer, StylesSourceTitle, StyledSourceLink}

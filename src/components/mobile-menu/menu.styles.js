@@ -8,12 +8,14 @@ const StyledMenu = styled.ul`
   display: flex;
   flex-direction: column;
   position: absolute;
+  z-index: 2;
   top: 105.5px;
   gap: 2.5rem;
 `;
 
 const StyledMenuItem = styled.li`
   font-family: 'Spartan', sans-serif;
+  text-transform: capitalize;
   font-weight: 700;
   font-size: 0.9375rem;
   line-height: 1.5625rem;
