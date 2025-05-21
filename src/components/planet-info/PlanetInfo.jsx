@@ -5,38 +5,37 @@ import {
   StyledImg,
   StyledContainer,
   StyledImgContainer,
-  StyledGeologyImg,
+  StyledGeologyImg
 } from './planet-info.styles';
 
-const PlanetInfo = ({planet, filter, planetLink}) => {
+const PlanetInfo = ({ planet, filter, planetLink }) => {
   console.log(planetLink.size);
-  
 
-  const img = defineImg(filter, planet)
-  
+  const img = defineImg(filter, planet);
+
   return (
     <StyledContainer>
-    
-    <StyledImgContainer>
+      <StyledImgContainer>
         <StyledImg src={img} $planetLink={planetLink.size} />
-        {filter === 2 && <StyledGeologyImg $planet={planet} src={planet.geologyImg} />}
-    </StyledImgContainer>
-    
-    <PlanetDescription {...planet} filter={filter}/>
-    <PlanetSource {...planet} />
-    <PlanetData {...planet}/>
+        {filter === 2 && (
+          <StyledGeologyImg $planet={planet} src={planet.geologyImg} />
+        )}
+      </StyledImgContainer>
 
+      <PlanetDescription {...planet} filter={filter} />
+      <PlanetSource {...planet} />
+      <PlanetData {...planet} />
     </StyledContainer>
   );
 };
 
 const defineImg = (filter, planet) => {
   console.log(filter);
-  if (filter === 1){
-    return planet.internalImg
-  } else{
-    return planet.planetImg
+  if (filter === 1) {
+    return planet.internalImg;
+  } else {
+    return planet.planetImg;
   }
-}
+};
 
 export default PlanetInfo;

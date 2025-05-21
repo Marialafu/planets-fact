@@ -11,6 +11,8 @@ const StyledMenu = styled.ul`
   z-index: 2;
   top: 105.5px;
   gap: 2.5rem;
+  translate: ${({ $openMenu }) => ($openMenu ? '0' : '-100%')};
+  transition: translate 0.5s;
 `;
 
 const StyledMenuItem = styled.li`

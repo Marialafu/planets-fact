@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
       <Header openMenu={openMenu} setOpenMenu={setOpenMenu} />
-      {openMenu && <MobileMenu />}
+      <MobileMenu openMenu={openMenu} />
       <HomeBody />
     </>
   );

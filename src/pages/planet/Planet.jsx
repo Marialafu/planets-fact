@@ -7,24 +7,27 @@ import Filters from '../../components/filters/Filters';
 
 const Planet = ({ planetLink }) => {
   const [openMenu, setOpenMenu] = useState(false);
-  const [filter, setFilter] = useState(0)
+  const [filter, setFilter] = useState(0);
 
   const planetSelected = identifyPlanetSelected(planetLink);
 
   return (
     <>
       <Header openMenu={openMenu} setOpenMenu={setOpenMenu} />
-      <Filters planet={planetLink} filter={filter} setFilter={setFilter}/>
+      <Filters planet={planetLink} filter={filter} setFilter={setFilter} />
 
-      {openMenu && <MobileMenu openMenu={openMenu} setOpenMenu={setOpenMenu} />}
+      <MobileMenu openMenu={openMenu} setOpenMenu={setOpenMenu} />
 
-      <PlanetInfo planet={planetSelected} filter={filter} planetLink={planetLink} />
+      <PlanetInfo
+        planet={planetSelected}
+        filter={filter}
+        planetLink={planetLink}
+      />
     </>
   );
 };
 
 const identifyPlanetSelected = planetLink => {
-
   const planetSelected = PLANETS_INFO.find(planet => {
     return planet.name === planetLink.name;
   });

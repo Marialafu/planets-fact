@@ -17,21 +17,16 @@ const StyledImgContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-`
+`;
 const StyledImg = styled.img`
-  width: ${({$planetLink}) => $planetLink}%;
+  width: ${({ $planetLink }) => $planetLink}%;
   height: auto;
 `;
 
 const StyledGeologyImg = styled.img`
   position: absolute;
   width: 4.375rem;
-  bottom: 300px;
-`
+  bottom: 35%;
+`;
 
-export {
-  StyledContainer,
-  StyledImg,
-  StyledImgContainer,
-  StyledGeologyImg
-};
+export { StyledContainer, StyledImg, StyledImgContainer, StyledGeologyImg };

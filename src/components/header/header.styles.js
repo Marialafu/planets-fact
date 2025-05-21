@@ -8,7 +8,7 @@ const StyledHeader = styled.header`
   padding: 1rem 1.5rem;
   position: relative;
 
-  &::before{
+  &::before {
     content: '';
     top: 105px;
     right: 0%;
@@ -24,7 +24,7 @@ const StyledTitle = styled.h1`
 `;
 
 const StyledImg = styled.img`
-  background-color: ${({$openMenu}) => $openMenu ? 'white' : 'black'};
-`
+  opacity: ${({ $openMenu }) => ($openMenu ? '50%' : '100%')};
+`;
 
 export { StyledHeader, StyledTitle, StyledImg };
