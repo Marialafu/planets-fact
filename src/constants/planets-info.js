@@ -13,7 +13,7 @@ export const PLANETS_INFO = [
     rotation: 58.6,
     revolution: 87.97,
     radius: '2,439.7',
-    averageTemp: 430,
+    averageTemp: 430
   },
   {
     id: v4(),
@@ -27,7 +27,7 @@ export const PLANETS_INFO = [
     rotation: 243,
     revolution: 224.7,
     radius: '6,051.8',
-    averageTemp: 471,
+    averageTemp: 471
   },
   {
     id: v4(),
@@ -41,7 +41,7 @@ export const PLANETS_INFO = [
     rotation: 0.99,
     revolution: 365.26,
     radius: '6,371',
-    averageTemp: 16,
+    averageTemp: 16
   },
   {
     id: v4(),
@@ -55,13 +55,13 @@ export const PLANETS_INFO = [
     rotation: 1.03,
     revolution: 1.88,
     radius: '3,389.5',
-    averageTemp: -28,
+    averageTemp: -28
   },
   {
     id: v4(),
     name: 'jupiter',
     description:
-      "Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass two and a half times that of all the other planets in the Solar System combined, but less than one-thousandth the mass of the Sun.",
+      'Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass two and a half times that of all the other planets in the Solar System combined, but less than one-thousandth the mass of the Sun.',
     planetImg: '/assets/planet-jupiter.svg',
     internalImg: '/assets/planet-jupiter-internal.svg',
     geologyImg: '/assets/geology-jupiter.png',
@@ -69,13 +69,13 @@ export const PLANETS_INFO = [
     rotation: 9.93,
     revolution: 11.86,
     radius: '69,911',
-    averageTemp: -108,
+    averageTemp: -108
   },
   {
     id: v4(),
     name: 'saturn',
     description:
-      "Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth. It only has one-eighth the average density of Earth.",
+      'Saturn is the sixth planet from the Sun and the second-largest in the Solar System, after Jupiter. It is a gas giant with an average radius of about nine and a half times that of Earth. It only has one-eighth the average density of Earth.',
     planetImg: '/assets/planet-saturn.svg',
     internalImg: '/assets/planet-saturn-internal.svg',
     geologyImg: '/assets/geology-saturn.png',
@@ -83,13 +83,13 @@ export const PLANETS_INFO = [
     rotation: 10.8,
     revolution: 29.46,
     radius: '58,232',
-    averageTemp: -138,
+    averageTemp: -138
   },
   {
     id: v4(),
     name: 'uranus',
     description:
-      "Uranus is the seventh planet from the Sun. Its name is a reference to the Greek god of the sky, Uranus according to Greek mythology, was the great-grandfather of Ares. It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System.",
+      'Uranus is the seventh planet from the Sun. Its name is a reference to the Greek god of the sky, Uranus according to Greek mythology, was the great-grandfather of Ares. It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System.',
     planetImg: '/assets/planet-uranus.svg',
     internalImg: '/assets/planet-uranus-internal.svg',
     geologyImg: '/assets/geology-uranus.png',
@@ -97,13 +97,13 @@ export const PLANETS_INFO = [
     rotation: 17.2,
     revolution: 84,
     radius: '25,362',
-    averageTemp: -195,
+    averageTemp: -195
   },
   {
     id: v4(),
     name: 'neptune',
     description:
-      "Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, more massive than its near-twin Uranus.",
+      'Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth, more massive than its near-twin Uranus.',
     planetImg: '/assets/planet-neptune.svg',
     internalImg: '/assets/planet-neptune-internal.svg',
     geologyImg: '/assets/geology-neptune.png',
@@ -111,7 +111,17 @@ export const PLANETS_INFO = [
     rotation: 16.08,
     revolution: 164.79,
     radius: '24,622',
-    averageTemp: -201,
-  },
-
+    averageTemp: -201
+  }
 ];
+
+// export default PLANETS = {
+//   mercury: mercury,
+//   venus: venus,
+//   earth: earth,
+//   mars: mars,
+//   jupiter: jupiter,
+//   saturn: saturn,
+//   uranus: uranus,
+//   neptune: neptune
+// };

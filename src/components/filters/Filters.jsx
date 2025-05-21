@@ -5,16 +5,16 @@ import { StyledActivatedText, StyledContainer } from './filters.styled';
 const Filters = ({ planet, filter, setFilter }) => {
   return (
     <StyledContainer>
-      {FILTERS.map(eachFilter => {
+      {FILTERS.map((eachFilter, index) => {
         return (
           <StyledActivatedText
             key={v4()}
             $planet={planet}
-            onClick={() => setFilter(eachFilter.value)}
+            onClick={() => setFilter(index)}
             $filter={filter}
-            $eachfilter={eachFilter}
+            $eachfilter={index}
           >
-            {eachFilter.name}
+            {eachFilter}
           </StyledActivatedText>
         );
       })}

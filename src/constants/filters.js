@@ -1,14 +1,7 @@
-export const FILTERS = [
-    {
-        value: 0,
-        name: 'overview',
-    },
-    {
-        value: 1,
-        name: 'structure',
-    },
-    {
-        value: 2,
-        name: 'surface',
-    },
-]
+export const FILTERS = ['overview', 'structure', 'surface'];
+
+export const FILTERS_INFO = {
+  overview: 0,
+  structure: 1,
+  surface: 2
+};

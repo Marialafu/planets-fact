@@ -23,17 +23,19 @@ const StyledActivatedText = styled.span`
   font-size: 11px;
   letter-spacing: 0.1206rem;
   color: ${({ $filter, $eachfilter }) =>
-    $filter === $eachfilter.value ? 'white' : 'grey'};
+    $filter === $eachfilter ? 'white' : 'grey'};
   position: relative;
+  width: fit-content;
 
   &::before {
     content: '';
     position: absolute;
     top: 1.6875rem;
-    width: 5rem;
     height: 0.25rem;
+    width: 110%;
+    left: -3%;
     background-color: ${({ $planet, $filter, $eachfilter }) =>
-      $filter === $eachfilter.value ? $planet.color : 'transparent'};
+      $filter === $eachfilter ? $planet.color : 'transparent'};
   }
 `;
 

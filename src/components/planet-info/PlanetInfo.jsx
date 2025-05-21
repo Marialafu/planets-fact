@@ -9,8 +9,6 @@ import {
 } from './planet-info.styles';
 
 const PlanetInfo = ({ planet, filter, planetLink }) => {
-  console.log(planetLink.size);
-
   const img = defineImg(filter, planet);
 
   return (

@@ -12,7 +12,7 @@ const Router = () => {
         <Route
           key={planet.id}
           path={planet.link}
-          element={<Planet planetLink={planet} />}
+          element={<Planet planetLink={planet.name} />}
         />
       ))}
     </Routes>

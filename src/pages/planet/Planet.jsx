@@ -4,10 +4,11 @@ import MobileMenu from '../../components/mobile-menu/MobileMenu';
 import { PLANETS_INFO } from '../../constants/planets-info';
 import PlanetInfo from '../../components/planet-info/PlanetInfo';
 import Filters from '../../components/filters/Filters';
+import { FILTERS_INFO } from '../../constants/filters';
 
 const Planet = ({ planetLink }) => {
   const [openMenu, setOpenMenu] = useState(false);
-  const [filter, setFilter] = useState(0);
+  const [filter, setFilter] = useState(FILTERS_INFO.overview);
 
   const planetSelected = identifyPlanetSelected(planetLink);
 
