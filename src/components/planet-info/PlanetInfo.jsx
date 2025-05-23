@@ -1,3 +1,4 @@
+import { FILTERS_INFO } from '../../constants/filters';
 import PlanetData from '../planet-data/PlanetData';
 import PlanetDescription from '../planet-description/PlanetDescription';
 import PlanetSource from '../planet-source/PlanetSource';
@@ -5,35 +6,41 @@ import {
   StyledImg,
   StyledContainer,
   StyledImgContainer,
-  StyledGeologyImg
+  StyledGeologyImg,
+  StyledPlanetInfoContainer,
+  StyledDataInfoContainer
 } from './planet-info.styles';
 
-const PlanetInfo = ({ planet, filter, planetLink }) => {
-  const img = defineImg(filter, planet);
+const PlanetInfo = ({ planetName, planetSelected, filter }) => {
+  const src = planetSelected.images[filter];
+  const img = filter === FILTERS_INFO.surface ? src.main : src;
 
   return (
     <StyledContainer>
       <StyledImgContainer>
-        <StyledImg src={img} $planetLink={planetLink.size} />
-        {filter === 2 && (
-          <StyledGeologyImg $planet={planet} src={planet.geologyImg} />
+        <StyledImg
+          src={img}
+          $planetWidth={planetSelected.planetWidth}
+        />
+        {filter === FILTERS_INFO.surface && (
+          <StyledGeologyImg src={src.geology} />
         )}
       </StyledImgContainer>
 
-      <PlanetDescription {...planet} filter={filter} />
-      <PlanetSource {...planet} />
-      <PlanetData {...planet} />
+      <StyledDataInfoContainer>
+        <StyledPlanetInfoContainer>
+          <PlanetDescription
+            {...planetSelected}
+            filter={filter}
+            planetName={planetName}
+          />
+          <PlanetSource {...planetSelected} />
+        </StyledPlanetInfoContainer>
+
+        <PlanetData {...planetSelected} />
+      </StyledDataInfoContainer>
     </StyledContainer>
   );
-};
-
-const defineImg = (filter, planet) => {
-  console.log(filter);
-  if (filter === 1) {
-    return planet.internalImg;
-  } else {
-    return planet.planetImg;
-  }
 };
 
 export default PlanetInfo;

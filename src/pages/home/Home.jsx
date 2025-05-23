@@ -1,15 +1,18 @@
 import { useState } from 'react';
 import Header from '../../components/header/Header';
 import HomeBody from '../../components/home-body/HomeBody';
-import MobileMenu from '../../components/mobile-menu/MobileMenu';
+import Menu from '../../components/menu/Menu';
 
 const Home = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
   return (
     <>
-      <Header openMenu={openMenu} setOpenMenu={setOpenMenu} />
-      <MobileMenu openMenu={openMenu} />
+      <Header
+        openMenu={openMenu}
+        setOpenMenu={setOpenMenu}
+      />
+      <Menu openMenu={openMenu} />
       <HomeBody />
     </>
   );

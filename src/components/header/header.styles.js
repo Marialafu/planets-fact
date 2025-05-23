@@ -17,6 +17,16 @@ const StyledHeader = styled.header`
     width: 100vw;
     background-color: ${COLORS.white500};
   }
+
+  @media screen and (min-width: 768px){
+    justify-content: center;
+    padding: 1rem 0 0 0;
+    margin-bottom: 2.4375rem;
+
+    &::before{
+      display: none;
+    }
+  }
 `;
 
 const StyledTitle = styled.h1`
@@ -25,6 +35,10 @@ const StyledTitle = styled.h1`
 
 const StyledImg = styled.img`
   opacity: ${({ $openMenu }) => ($openMenu ? '50%' : '100%')};
+
+  @media screen and (min-width: 768px){
+    display: none;
+  }
 `;
 
 export { StyledHeader, StyledTitle, StyledImg };

@@ -5,8 +5,11 @@ const StyledSourceContainer = styled.div`
   display: flex;
   gap: 0.25rem;
   justify-content: center;
-  align-items: center;
   margin-bottom: 1.75rem;
+
+  @media screen and (min-width: 768px){
+    justify-content: left;
+  }
 `;
 
 const StylesSourceTitle = styled.span`

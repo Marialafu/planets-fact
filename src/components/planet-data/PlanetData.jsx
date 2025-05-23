@@ -1,39 +1,33 @@
-import { v4 } from "uuid";
-import { DATA_VALUES } from "../../constants/data-values"
-import { StyledInfoContainer, StyledInfoTitle, StyledInfoValue } from "./planet-data.styled"
+import {
+  StyledContainer,
+  StyledInfoContainer,
+  StyledInfoTitle,
+  StyledInfoValue
+} from './planet-data.styled';
 
-const PlanetData = ({rotation, revolution, radius, averageTemp}) => {
-
-    return (
-    <>
-    {/* {DATA_VALUES.map(value => 
-        <StyledInfoContainer key={v4()}>
-            <StyledInfoTitle>{value}</StyledInfoTitle>
-            <StyledInfoValue>58.6 days</StyledInfoValue>
-        </StyledInfoContainer>
-    )} */}
-
-    <StyledInfoContainer>
+const PlanetData = ({ rotationTime, revolutionTime, radius, averageTemp }) => {
+  return (
+    <StyledContainer>
+      <StyledInfoContainer>
         <StyledInfoTitle>ROTATION TIME</StyledInfoTitle>
-        <StyledInfoValue>{rotation} days</StyledInfoValue>
-    </StyledInfoContainer>
+        <StyledInfoValue>{rotationTime}</StyledInfoValue>
+      </StyledInfoContainer>
 
-    <StyledInfoContainer>
+      <StyledInfoContainer>
         <StyledInfoTitle>REVOLUTION TIME</StyledInfoTitle>
-        <StyledInfoValue>{revolution} days</StyledInfoValue>
-    </StyledInfoContainer>
+        <StyledInfoValue>{revolutionTime}</StyledInfoValue>
+      </StyledInfoContainer>
 
-    <StyledInfoContainer>
+      <StyledInfoContainer>
         <StyledInfoTitle>RADIUS</StyledInfoTitle>
-        <StyledInfoValue>{radius} km</StyledInfoValue>
-    </StyledInfoContainer>
+        <StyledInfoValue>{radius}</StyledInfoValue>
+      </StyledInfoContainer>
 
-    <StyledInfoContainer>
+      <StyledInfoContainer>
         <StyledInfoTitle>AVERAGE TEMP.</StyledInfoTitle>
-        <StyledInfoValue>{averageTemp} °C</StyledInfoValue>
-    </StyledInfoContainer>
-    </>
-    )
-
-}
-export default PlanetData
+        <StyledInfoValue>{averageTemp}</StyledInfoValue>
+      </StyledInfoContainer>
+    </StyledContainer>
+  );
+};
+export default PlanetData;

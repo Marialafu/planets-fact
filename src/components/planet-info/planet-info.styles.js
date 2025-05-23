@@ -10,6 +10,16 @@ const StyledContainer = styled.div`
   margin-bottom: 1.875rem;
 `;
 
+const StyledPlanetInfoContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @media screen and (min-width: 768px){
+    width: 20.625rem;
+  }
+`
+
 const StyledImgContainer = styled.div`
   padding-top: 2.375rem;
   width: 20.4375rem;
@@ -18,15 +28,31 @@ const StyledImgContainer = styled.div`
   justify-content: center;
   align-items: center;
 `;
+
 const StyledImg = styled.img`
-  width: ${({ $planetLink }) => $planetLink}%;
+  position: relative;
+  width: ${({ $planetWidth }) => $planetWidth};
   height: auto;
 `;
 
 const StyledGeologyImg = styled.img`
   position: absolute;
   width: 4.375rem;
-  bottom: 35%;
+  bottom: 30%;
+
+  @media screen and (min-width: 768px){
+    bottom: 50%;
+  }
 `;
 
-export { StyledContainer, StyledImg, StyledImgContainer, StyledGeologyImg };
+const StyledDataInfoContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+
+  @media screen and (min-width: 768px){
+    justify-content: flex-start;
+  }
+`
+
+export { StyledContainer, StyledImg, StyledImgContainer, StyledGeologyImg, StyledPlanetInfoContainer, StyledDataInfoContainer};

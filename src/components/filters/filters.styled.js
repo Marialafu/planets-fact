@@ -17,6 +17,18 @@ const StyledContainer = styled.div`
     width: 100vw;
     background-color: ${COLORS.white500};
   }
+
+  @media screen and (min-width: 768px){
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+    top: 32.8125rem;
+    left: 27.9375rem;
+
+    &::before{
+      display: none;
+    }
+  }
 `;
 const StyledActivatedText = styled.span`
   font-family: ' Spartan', sans-serif;
@@ -35,8 +47,26 @@ const StyledActivatedText = styled.span`
     width: 110%;
     left: -3%;
     background-color: ${({ $planet, $filter, $eachfilter }) =>
-      $filter === $eachfilter ? $planet.color : 'transparent'};
+      $filter === $eachfilter ? $planet.activeColor : 'transparent'};
+  }
+
+  @media screen and (min-width: 768px){
+    width: 17.5625rem;
+    height: 2.5rem;
+    border: 0.0625rem solid ${({ $filter, $eachfilter }) =>
+    $filter === $eachfilter ? 'transparent' : 'grey'};
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.4375rem 0 0.4375rem 1.25rem;
+    background-color: ${({ $filter, $eachfilter }) =>
+    $filter === $eachfilter ? '#419EBB' : 'transparent'};
+
+    &::before{
+      display: none;
+    }
   }
 `;
+
 
 export { StyledContainer, StyledActivatedText };
