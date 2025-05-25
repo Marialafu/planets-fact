@@ -27,10 +27,23 @@ const StyledHeader = styled.header`
       display: none;
     }
   }
+  @media screen and (min-width: 1400px){
+    justify-content: left;
+    padding: 1rem 0 0 2rem;
+    margin-bottom: 2.4375rem;
+
+    &::before{
+      display: none;
+    }
+  }
 `;
 
 const StyledTitle = styled.h1`
   font-size: 1.75rem;
+
+  @media screen and (min-width: 1400px){
+    font-size: 2rem;
+  }
 `;
 
 const StyledImg = styled.img`

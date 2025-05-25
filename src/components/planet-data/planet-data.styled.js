@@ -10,6 +10,10 @@ const StyledContainer = styled.div`
     flex-direction: row;
     gap: 0.6875rem;
   }
+
+  @media screen and (min-width: 768px){
+    gap: 1.875rem;
+  }
 `
 
 const StyledInfoContainer = styled.div`
@@ -28,6 +32,10 @@ const StyledInfoContainer = styled.div`
     align-items: first baseline;
 
   }
+
+  @media screen and (min-width: 1400px){
+    width: 15.9375rem;
+  }
 `;
 
 const StyledInfoTitle = styled.span`
@@ -36,11 +44,23 @@ const StyledInfoTitle = styled.span`
   text-transform: uppercase;
   line-height: 1rem;
   font-size: 0.625rem;
+
+  @media screen and (min-width: 768px){
+    width: 20.625rem;
+  }
+
+  @media screen and (min-width: 1400px){
+    font-size: 0.6875rem;
+  }
 `;
 
 const StyledInfoValue = styled.span`
     font-size: 1.25rem;
     text-transform: uppercase;
+
+    @media screen and (min-width: 1400px){
+    font-size: 2.5rem;
+  }
 `
 
 export {StyledContainer, StyledInfoContainer, StyledInfoTitle, StyledInfoValue}

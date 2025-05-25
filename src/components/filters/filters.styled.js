@@ -22,12 +22,16 @@ const StyledContainer = styled.div`
     flex-direction: column;
     gap: 1rem;
     padding: 0;
-    top: 32.8125rem;
-    left: 27.9375rem;
+    top: 31.875rem;
+    left: 31.25rem;
 
     &::before{
       display: none;
     }
+  }
+
+  @media screen and (min-width: 1400px){
+    left: 54.0625rem;
   }
 `;
 const StyledActivatedText = styled.span`
@@ -65,6 +69,12 @@ const StyledActivatedText = styled.span`
     &::before{
       display: none;
     }
+  }
+
+  @media screen and (min-width: 1400px){
+    width: 25rem;
+    top: -2.5rem;
+    height: 3.5rem;
   }
 `;
 

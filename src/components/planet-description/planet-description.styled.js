@@ -9,6 +9,10 @@ const StyledDescriptionContainer = styled.div`
     justify-content: flex-start;
     align-items: first baseline;
   }
+
+  @media screen and (min-width: 1400px){
+    width: 25rem;
+  }
 `;
 
 const StyledTitle = styled.h2`

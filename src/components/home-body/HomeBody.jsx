@@ -1,11 +1,14 @@
-import { StyledContainer } from "./home.body.styles"
+import { StyledContainer, StyledImg } from './home.body.styles';
 
 const HomeBody = () => {
-    return (
-        <StyledContainer>
-        <img src="/assets/Solar sistem.svg" alt="" />
-        </StyledContainer>
-    )
-}
+  return (
+    <StyledContainer>
+      <StyledImg
+        src='/assets/Solar sistem.svg'
+        alt=''
+      />
+    </StyledContainer>
+  );
+};
 
-export default HomeBody
+export default HomeBody;

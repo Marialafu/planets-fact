@@ -1,4 +1,4 @@
-# Planetas
+# EL SISTEMA SOLAR
 
 <p>
     <img src="" alt="Imagen del proyecto">
@@ -14,11 +14,11 @@
 
 ## Descripción 📑
 
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. A voluptatum et esse, ipsum ipsam debitis ducimus dolorum placeat? Consectetur, soluta vero. Accusamus iure est pariatur, doloremque nam cumque natus unde adipisci laborum ut. At id sapiente consequatur earum. Magnam doloribus, voluptate zumito doloremque obcaecati vel excepturi numquam cupiditate ipsam quisquam!
+Este proyecto es una enciclopedia visual e interactiva sobre el sistema solar. Las imágenes de los planetas se ajustan proporcionalmente a su tamaño para oferecer un mayor atractivo y mejora la interacción.
 
 ## ¿Qué he aprendido en este proyecto? 🙇🏻
 
-Lorem ipsum dolor, sit amet consectetur adipisicing elit. A voluptatum et esse, ipsum ipsam debitis ducimus dolorum placeat? Consectetur, soluta vero. Accusamus iure est pariatur, doloremque nam cumque natus unde adipisci laborum ut. At id sapiente consequatur earum. Magnam doloribus, voluptate zumito doloremque obcaecati vel excepturi numquam cupiditate ipsam quisquam!
+Este proyecto me permitió profundizar en el uso de React Router, tanto para rutas básicas como anidadas, comprendiendo como estructurar un sitio multipágina sin perder fluidez de navegación. También me enfrenté a un reto más complejo de diseño responsive. El uso de Styled Components fue clave para que los estilos condicionales fueran más sencillos de aplicar.
 
 ## Tecnologías 🛠
 
@@ -27,6 +27,16 @@ Lorem ipsum dolor, sit amet consectetur adipisicing elit. A voluptatum et esse, 
 <p>
     <a href="https://es.wikipedia.org/wiki/React">
         <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React logo">
+    </a>
+</p>
+<p>
+    <a href="https://reactrouter.com/">
+        <img src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white" alt="React Router">
+    </a>
+</p>
+<p>
+    <a href="https://styled-components.com/">
+        <img src="https://img.shields.io/badge/Styled_Components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white" alt="Styled Components Logo">
     </a>
 </p>
 
@@ -40,7 +50,7 @@ Lorem ipsum dolor, sit amet consectetur adipisicing elit. A voluptatum et esse, 
 
 ## Autor ✒️
 
-**TU NOMBRE**
+María Lafuente
 
 <ul>
     <li>

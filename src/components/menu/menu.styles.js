@@ -9,7 +9,7 @@ const StyledMenu = styled.ul`
   flex-direction: column;
   position: absolute;
   z-index: 2;
-  top: 105.5px;
+  top: 6.5938rem;
   gap: 2.5rem;
   translate: ${({ $openMenu }) => ($openMenu ? '0' : '-100%')};
   transition: translate 0.5s;
@@ -29,6 +29,23 @@ const StyledMenu = styled.ul`
       top: 200%;
       left: 0;
       width: 100vw;
+      height: 0.0625rem;
+      background-color: ${COLORS.white500};
+    }
+  }
+  @media screen and (min-width: 1400px){
+    width: 41.5625rem;
+    padding: 0 1rem;
+    right: 23%;
+    top: 3rem;
+    
+
+    &::before{
+      content: '';
+      position: absolute;
+      top: 280%;
+      left: -63%;
+      width: 212%;
       height: 0.0625rem;
       background-color: ${COLORS.white500};
     }
@@ -66,6 +83,10 @@ const StyledMenuItem = styled.li`
     &::before{
       display: none;
     }
+  }
+
+  @media screen and (min-width: 1400px){
+    font-size: 1.25rem;
   }
 `;
 
