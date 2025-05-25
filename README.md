@@ -66,7 +66,7 @@ María Lafuente
 
 ## Link del reto (si es público)
 
-<a href="https://www.frontendmentor.io/challenges/product-list-with-cart-5MmqLVAp_d">Página de frontendmentor</a>
+<a href="https://www.frontendmentor.io/challenges/planets-fact-site-gazqN8w_f">Página de frontendmentor</a>
 
 ## Instalación
 
