@@ -5,6 +5,7 @@ import PlanetInfo from '../../components/planet-info/PlanetInfo';
 import Filters from '../../components/filters/Filters';
 import { FILTERS_INFO } from '../../constants/filters';
 import Menu from '../../components/menu/Menu';
+import { StyledContainer } from './planet.styled';
 
 const Planet = ({ planetName }) => {
   const [openMenu, setOpenMenu] = useState(false);
@@ -14,27 +15,23 @@ const Planet = ({ planetName }) => {
 
   return (
     <>
-      <Header
-        openMenu={openMenu}
-        setOpenMenu={setOpenMenu}
-      />
+      <Header openMenu={openMenu} setOpenMenu={setOpenMenu} />
 
-      <Menu
-        openMenu={openMenu}
-        setOpenMenu={setOpenMenu}
-      />
+      <Menu openMenu={openMenu} setOpenMenu={setOpenMenu} />
 
-      <Filters
-        planetSelected={planetSelected}
-        filter={filter}
-        setFilter={setFilter}
-      />
+      <StyledContainer>
+        <Filters
+          planetSelected={planetSelected}
+          filter={filter}
+          setFilter={setFilter}
+        />
 
-      <PlanetInfo
-        planetSelected={planetSelected}
-        filter={filter}
-        planetName={planetName}
-      />
+        <PlanetInfo
+          planetSelected={planetSelected}
+          filter={filter}
+          planetName={planetName}
+        />
+      </StyledContainer>
     </>
   );
 };

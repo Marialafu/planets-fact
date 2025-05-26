@@ -9,7 +9,7 @@ const StyledContainer = styled.div`
   justify-content: center;
   margin-bottom: 1.875rem;
 
-  @media screen and (min-width: 1400px){
+  @media screen and (min-width: 1400px) {
     flex-direction: row;
     padding: 0 10.3125rem;
   }
@@ -20,10 +20,10 @@ const StyledPlanetInfoContainer = styled.div`
   flex-direction: column;
   gap: 2rem;
 
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     width: 25rem;
   }
-`
+`;
 
 const StyledImgContainer = styled.div`
   padding-top: 2.375rem;
@@ -53,11 +53,11 @@ const StyledImgContainer = styled.div`
 
 const StyledImg = styled.img`
   position: relative;
-  width: ${({ $planetWidth }) => ($planetWidth) };
+  width: ${({ $planetWidth }) => $planetWidth};
   height: auto;
 
   @media screen and (min-width: 768px) {
-    scale: 130%;
+    width: ${({ $planetWidth }) => $planetWidth / 10 + 'px'};
   }
 
   @media screen and (min-width: 1400px) {
@@ -71,12 +71,12 @@ const StyledGeologyImg = styled.img`
   width: 4.375rem;
   bottom: 30%;
 
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     scale: 170%;
     bottom: 50%;
     top: 12.5rem;
   }
-  @media screen and (min-width: 1400px){
+  @media screen and (min-width: 1400px) {
     bottom: 50%;
     top: 18.75rem;
     scale: 190%;
@@ -88,14 +88,21 @@ const StyledDataInfoContainer = styled.div`
   flex-direction: column;
   gap: 1.75rem;
 
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     justify-content: flex-start;
   }
 
-  @media screen and (min-width: 1400px){
+  @media screen and (min-width: 1400px) {
     align-items: end;
     gap: 18.875rem;
   }
-`
+`;
 
-export { StyledContainer, StyledImg, StyledImgContainer, StyledGeologyImg, StyledPlanetInfoContainer, StyledDataInfoContainer};
+export {
+  StyledContainer,
+  StyledImg,
+  StyledImgContainer,
+  StyledGeologyImg,
+  StyledPlanetInfoContainer,
+  StyledDataInfoContainer
+};
